@@ -151,13 +151,13 @@
   const isLoggedIn = ref(true)
   const user= ref(null);
   // runs after firebase is initialized
-  firebase.auth().onAuthStateChanged(function(user) {
-      if (user) {
-        isLoggedIn.value = true // if we have a user
-      } else {
-        isLoggedIn.value = false // if we do not
-      }
-  })
+  // firebase.auth().onAuthStateChanged(function(user) {
+  //     if (user) {
+  //       isLoggedIn.value = true // if we have a user
+  //     } else {
+  //       isLoggedIn.value = false // if we do not
+  //     }
+  // })
   const  logout = () => {
     firebase.auth().signOut()
     router.push('/login')
