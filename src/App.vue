@@ -17,8 +17,9 @@
 
    </span>
        </div>
-    <label class="upercase" for="">{{this.$store.state.userInfo.displayName}}</label>
-   <div class="inline relative ml-2">
+        <!-- wwxspo$^p,  <label class="upercase" for="">{{this.$store.state.userInfo.displayName}}</label> -->
+              <label class="upercase" for=""></label>
+        <div class="inline relative ml-2">
                 <!-- <button type="button" class="inline-flex items-center relative px-2 border rounded-full hover:shadow-lg">
                     <div class="pl-1">
                         <svg viewBox="0 0 32 32"
@@ -47,14 +48,11 @@
                     </div>
                 </button> -->
                 <div v-if="isLoggedIn" class="border w-8 h-8 rounded-full flex justify-center items-center">
-                  <img class="bg-cover w-full h-full rounded-full cursor-pointer 	" :src="this.$store.state.userInfo.photoURL" >
+                  <img class="bg-cover w-full h-full rounded-full cursor-pointer 	" >
                   <!-- displayName -->
-                  
                 </div>
             </div>
-
    </div>
- 
 </div>
 <!-- sidebar  -->
 <div class="  h-full w-full   mx-auto  bg-white rounded flex shadow-2xl ">

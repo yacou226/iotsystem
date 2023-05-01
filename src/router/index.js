@@ -3,8 +3,12 @@ import firebase from 'firebase'
 import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Test from '../views/Test.vue'
+import store from '@/store/index.js';
+
+
 
 const routes = [
+  
   {
     path: '/login',
     name: 'Login',
@@ -31,8 +35,10 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
   mode:'history',
+  history: createWebHistory(process.env.BASE_URL),
+
+  
   routes
 })
 
