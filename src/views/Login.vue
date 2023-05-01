@@ -46,6 +46,7 @@
 
 </template>
 <script>
+import store from '../store/index'
 import firebase from 'firebase'
 import {mapActions} from 'vuex'
 export default {
@@ -58,6 +59,11 @@ export default {
             erreur:"",
             
         }
+    },
+    computed:{
+        $store() {
+      return store
+    }
     },
     methods: {
         Google(){
