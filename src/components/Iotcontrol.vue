@@ -55,6 +55,8 @@ import axios, { Axios } from 'axios'
 
 
 import {mapState} from 'vuex'
+import store from '../store/index'
+
 export default {
     name:'Iotcontrol',
     components:{
@@ -72,9 +74,11 @@ export default {
          
       }
     },
-     created() {
-             // ...mapState(['LED_STATUS'])
-            },
+    computed: {
+    $store() {
+      return store
+    }
+  },
     mounted() {
       this.GetWaterLevel();
 
