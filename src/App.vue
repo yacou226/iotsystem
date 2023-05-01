@@ -6,7 +6,7 @@
    </div>
      <div class="flex items-center  ">
        <div class="md:flex hidden">
-         <span v-if="!isLoggedIn">
+         <span >
                     <button class="w-24 p-1  px-4 rounded text-white font-bold mr-4 bg-cyan-800 hover:transition duration-150 ease-in-out ">
      <router-link class="	" to="/login">Login</router-link>
    </button>
